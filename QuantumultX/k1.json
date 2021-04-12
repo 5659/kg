@@ -29,19 +29,19 @@
       "script": "https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js"
     },
 {
-      "id": "jd_Joy_RewardA",
+      "id": "Joy_Reward",
       "name": "CWW",
       "keys": [],
       "settings": [
         {
-          "id": "jdJoyRewardNotifyA",
+          "id": "JoyRewardNotify",
           "name": "静默运行",
           "val": false,
           "type": "boolean",
           "desc": "开启后成功也不发出系统弹窗通知"
         },
         {
-          "id": "joyRewardNameA",
+          "id": "jdjoyRewardName",
           "name": "是否兑换",
           "val": "1",
           "type": "radios",
