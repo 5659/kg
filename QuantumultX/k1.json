@@ -1,21 +1,14 @@
 {
   "id": "5659.app.sub",
-  "name": "宠汪汪",
+  "name": "CWW",
   "author": "@5659",
   "icon": "https://avatars0.githubusercontent.com/u/21308593?s=52&v=4",
   "repo": "https://github.com/5659/kg/blob/main/QuantumultX/",
   "apps": [
     {
       "id": "JD_Cookies",
-      "name": "京东多账号 Ck 管理",
+      "name": "Ck 管理",
       "keys": ["CookiesJD"],
-      "descs_html": [
-        "请勿随意在输入框修改内容，建议通过脚本去获取cookie，若要修改，请按照JSON 格式修改（<a href=\"https://www.bejson.com/json/format\">可使用此JSON校验</a> ）。",
-        "示例：[{\"userName\":\"jd_xxx\",\"cookie\":\"pt_key=AAJ;pt_pin=jd_xxx;\"},{\"userName\":\"jd_66\",\"cookie\":\"pt_key=AAJ;pt_pin=jd_66;\"}]",
-        "脚本地址【<a href=\"https://jdsharedresourcescdn.azureedge.net/jdresource/JD_extra_cookie.js\">京东多 CK获取</a>】,并按照此脚本注释进行配置",
-        "使用方式【<a href=\"https://home.m.jd.com/myJd/newhome.action\">个人中心</a>】获取对应的数据Code",
-        "注：如与NobyDa的京东cookie重复，建议在此处删除重复的cookie"
-      ],
       "settings": [
         {
           "id": "CookiesJD",
@@ -37,7 +30,7 @@
     },
 {
       "id": "jd_Joy_RewardA",
-      "name": "宠汪汪兑换京豆",
+      "name": "CWW",
       "keys": [],
       "settings": [
         {
@@ -45,30 +38,30 @@
           "name": "静默运行",
           "val": false,
           "type": "boolean",
-          "desc": "开启后成功兑换到京豆也不发出系统弹窗通知"
+          "desc": "开启后成功也不发出系统弹窗通知"
         },
         {
           "id": "joyRewardNameA",
-          "name": "是否兑换京豆",
+          "name": "是否兑换",
           "val": "1",
           "type": "radios",
-          "desc": "默认开启兑换，如不想兑换可选择不兑换",
+          "desc": "默认开启",
           "items": [
             {
               "key": "0",
-              "label": "不兑换奖品(选择此项将不兑换奖品)"
+              "label": "不兑换奖品"
             },
             {
               "key": "1",
-              "label": "兑换20京豆"
+              "label": "兑换20"
             },
             {
               "key": "500",
-              "label": "兑换500京豆"
+              "label": "兑换500"
             },
             {
               "key": "1000",
-              "label": "兑换1000京豆"
+              "label": "兑换1000"
             }
           ]
         }
