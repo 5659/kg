@@ -35,9 +35,9 @@
       "repo": "https://github.com/dompling/Script",
       "script": "https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js"
     },
-    {
-      "id": "Joy_Reward",
-      "name": "宠汪汪兑换京豆",
+{
+      "id": "jd_Joy_Reward",
+      "name": "宠汪汪积分兑换京豆",
       "keys": [],
       "settings": [
         {
@@ -48,7 +48,7 @@
           "desc": "开启后成功兑换到京豆也不发出系统弹窗通知"
         },
         {
-          "id": "Reward",
+          "id": "joyRewardNameA",
           "name": "是否兑换京豆",
           "val": "1",
           "type": "radios",
@@ -57,6 +57,10 @@
             {
               "key": "0",
               "label": "不兑换奖品(选择此项将不兑换奖品)"
+            },
+            {
+              "key": "1",
+              "label": "兑换20京豆"
             },
             {
               "key": "500",
