@@ -48,7 +48,7 @@
           "desc": "开启后成功兑换到京豆也不发出系统弹窗通知"
         },
         {
-          "id": "joyRewardName",
+          "id": "Reward",
           "name": "是否兑换京豆",
           "val": "1",
           "type": "radios",
