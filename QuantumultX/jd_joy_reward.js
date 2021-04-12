@@ -104,15 +104,15 @@ async function joyReward() {
       let rewardNum = 0;
       if ($.isNode() && process.env.JD_JOY_REWARD_NAME) {
         rewardNum = process.env.JD_JOY_REWARD_NAME * 1;
-      } else if ($.getdata('joyRewardNameA')) {
-        if ($.getdata('joyRewardNameA') * 1 === 1) {
+      } else if ($.getdata('jdjoyRewardName')) {
+        if ($.getdata('jdjoyRewardName') * 1 === 1) {
           //兼容之前的BoxJs设置
           rewardNum = 20;
         } else {
-          rewardNum = $.getdata('joyRewardNameA') * 1;
+          rewardNum = $.getdata('jdjoyRewardName') * 1;
         }
       } else {
-        rewardNum = joyRewardNameA;
+        rewardNum = jdjoyRewardName;
       }
       let giftSaleInfos = 'beanConfigs0';
       let time = new Date($.getExchangeRewardsRes['currentTime']).getHours();
@@ -150,10 +150,10 @@ async function joyReward() {
               if ($.exchangeRes.errorCode === 'buy_success') {
                 // console.log(`兑换${giftValue}成功,【宠物等级】${data.level}\n【消耗积分】${salePrice}个\n【剩余积分】${data.coin - salePrice}个\n`)
                 console.log(`\n兑换${giftValue}成功,【消耗积分】${salePrice}个\n`)
-                if ($.isNode() && process.env.JD_JOY_REWARDA_NOTIFY) {
-                  $.ctrTemp = `${process.env.JD_JOY_REWARDA_NOTIFY}` === 'false';
-                } else if ($.getdata('jdJoyRewardNotifyA')) {
-                  $.ctrTemp = $.getdata('jdJoyRewardNotifyA') === 'false';
+                if ($.isNode() && process.env.JOY_REWARD_NOTIFY) {
+                  $.ctrTemp = `${process.env.JOY_REWARD_NOTIFY}` === 'false';
+                } else if ($.getdata('JoyRewardNotify')) {
+                  $.ctrTemp = $.getdata('JoyRewardNotify') === 'false';
                 } else {
                   $.ctrTemp = `${jdNotify}` === 'false';
                 }
