@@ -104,15 +104,15 @@ async function joyReward() {
       let rewardNum = 0;
       if ($.isNode() && process.env.JD_JOY_REWARD_NAME) {
         rewardNum = process.env.JD_JOY_REWARD_NAME * 1;
-      } else if ($.getdata('joyRewardName')) {
-        if ($.getdata('joyRewardName') * 1 === 1) {
+      } else if ($.getdata('joyRewardNameA')) {
+        if ($.getdata('joyRewardNameA') * 1 === 1) {
           //兼容之前的BoxJs设置
           rewardNum = 20;
         } else {
-          rewardNum = $.getdata('joyRewardName') * 1;
+          rewardNum = $.getdata('joyRewardNameA') * 1;
         }
       } else {
-        rewardNum = joyRewardName;
+        rewardNum = joyRewardNameA;
       }
       let giftSaleInfos = 'beanConfigs0';
       let time = new Date($.getExchangeRewardsRes['currentTime']).getHours();
