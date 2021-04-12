@@ -1,9 +1,9 @@
 {
-  "id": "lxk0301.app.sub",
+  "id": "5659.app.sub",
   "name": "宠汪汪",
-  "author": "@lxk0301",
+  "author": "@5659",
   "icon": "https://avatars0.githubusercontent.com/u/21308593?s=52&v=4",
-  "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master/",
+  "repo": "https://github.com/5659/kg/blob/main/QuantumultX/",
   "apps": [
     {
       "id": "JD_Cookies",
@@ -73,7 +73,7 @@
           ]
         }
       ],
-      "author": "@lxk0301",
+      "author": "@5659",
       "repo": "https://github.com/5659/kg/blob/main/QuantumultX/jd_joy_reward.js",
       "script": "https://raw.githubusercontent.com/5659/kg/main/QuantumultX/jd_joy_reward.js",
       "icons": [
