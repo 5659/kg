@@ -36,12 +36,12 @@
       "script": "https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js"
     },
 {
-      "id": "jd_Joy_Reward",
-      "name": "宠汪汪积分兑换京豆",
+      "id": "jd_Joy_RewardA",
+      "name": "宠汪汪兑换京豆",
       "keys": [],
       "settings": [
         {
-          "id": "jdJoyRewardNotify",
+          "id": "jdJoyRewardNotifyA",
           "name": "静默运行",
           "val": false,
           "type": "boolean",
