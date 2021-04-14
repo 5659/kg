@@ -98,11 +98,11 @@
         }
       ],
       "author": "5659",
-      "repo": "https://github.com/5659/kg/blob/main/QuantumultX/jd_joy_reward.js",
+      "repo": "https://github.com/5659/kg/blob/main/QuantumultX/jd_blueCoin.js.js",
       "scripts": [
         {
           "name" : "东东超市兑换1",
-          "script" : "https://raw.githubusercontent.com/5659/kg/main/QuantumultX/jd_joy_reward1.js"
+          "script" : "https://raw.githubusercontent.com/5659/kg/main/QuantumultX/jd_blueCoin.js1.js"
         }
       ],
       "icons": [
