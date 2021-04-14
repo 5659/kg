@@ -109,6 +109,42 @@
         "https://raw.githubusercontent.com/58xinian/icon/master/jxc_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jxc.png"
       ]
+    },
+ {
+      "id": "jd_SuperMarket_Reawrd2",
+      "name": "东东超市兑换2",
+      "keys": [
+        "coinToBeans2"
+      ],
+      "desc": "默认不兑换奖品,例如:兑换20京豆输入20,兑换1000京豆输入1000,兑换 柠檬果香洗手液， 输入 柠檬果香洗手液。其他详细的奖品名称去东东超市活动页面查看",
+      "settings": [
+        {
+          "id": "jdSuperMarketRewardNotify2",
+          "name": "静默运行",
+          "val": false,
+          "type": "boolean",
+          "desc": "开启后成功兑换到奖品不发出系统弹窗通知"
+        },
+        {
+          "id": "coinToBeans2",
+          "name": "兑换奖品（默认不兑换）",
+          "val": "0",
+          "type": "text",
+          "desc": "输入兑换奖品名称(默认不兑换奖品)"
+        }
+      ],
+      "author": "5659",
+      "repo": "https://github.com/5659/kg/blob/main/QuantumultX/jd_blueCoin2.js.js",
+      "scripts": [
+        {
+          "name" : "东东超市兑换1",
+          "script" : "https://raw.githubusercontent.com/5659/kg/main/QuantumultX/jd_blueCoin.js2.js"
+        }
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/58xinian/icon/master/jxc_mini.png",
+        "https://raw.githubusercontent.com/58xinian/icon/master/jxc.png"
+      ]
     }
   ]
 }
