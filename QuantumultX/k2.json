@@ -76,7 +76,7 @@
     },
      {
       "id": "jd_SuperMarket_Reawrd1",
-      "name": "东东超市兑换奖品1",
+      "name": "东东超市兑换1",
       "keys": [
         "coinToBeans"
       ],
@@ -101,7 +101,7 @@
       "repo": "https://github.com/5659/kg/blob/main/QuantumultX/jd_joy_reward.js",
       "scripts": [
         {
-          "name" : "东东超市兑换奖品1",
+          "name" : "东东超市兑换1",
           "script" : "https://raw.githubusercontent.com/5659/kg/main/QuantumultX/jd_joy_reward1.js"
         }
       ],
