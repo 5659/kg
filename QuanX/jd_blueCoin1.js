@@ -394,8 +394,8 @@ function msgShow() {
     $.log(`\n【京东账号${$.index}】${$.nickName || $.UserName}\n${coinToBeans1 ? `【兑换${$.title}】${$.beanscount ? `成功` : $.beanerr}` : "您设置的是不兑换奖品"}\n`);
     if ($.isNode() && process.env.MARKET_REWARD_NOTIFY) {
       $.ctrTemp = `${process.env.MARKET_REWARD_NOTIFY}` === 'false';
-    } else if ($.getdata('jdSuperMarketRewardNotify')) {
-      $.ctrTemp = $.getdata('jdSuperMarketRewardNotify') === 'false';
+    } else if ($.getdata('jdSuperMarketRewardNotify1')) {
+      $.ctrTemp = $.getdata('jdSuperMarketRewardNotify1') === 'false';
     } else {
       $.ctrTemp = `${jdNotify}` === 'false';
     }
