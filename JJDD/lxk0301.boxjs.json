@@ -90,213 +90,78 @@
     {
       "id": "jd_fruit",
       "name": "东东农场",
-      "keys": [
-        "jd_fruit_name",
-        "jd_fruit1",
-        "jd_fruit2",
-        "jd_fruit3",
-        "jd2_fruit_name",
-        "jd2_fruit1",
-        "jd2_fruit2",
-        "jd2_fruit3"
+      "keys": ["jd_fruit_inviter"],
+      “descs_html”：[
+        "请在输入框输入框互助的东东农场的好友互助码",
+        “同一个京东账号的好友邀请码用@隔开，不同京东账号互助码用换行（返回）隔开。示例：<br/>账号1-好友1邀请码@账号1邀请码-好友2邀请码<br/><br/>2-好友1邀请码@账号2-好友2邀请码",
+        “世界输入框提出一个示例，使用免费的创意邀请码然后按标准填写”
       ],
-      "descs_html": [
-        "<h4 align=\"center\">获取Cookie请查看NobyDa京东签到脚本说明<a href=\"https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js\">脚本注释</a></h4>"
-      ],
-      "settings": [
+      “设置”：[
         {
           "id": "jdFruitNotify",
           "name": "静默运行",
-          "val": false,
-          "type": "boolean",
+          “val”：假，
+          "类型": "布尔值",
           "desc": "运行东东农场脚本时不发出系统通知"
         },
         {
           "id": "jdFruitBeanCard",
           "name": "使用水滴换豆卡",
-          "val": false,
-          "type": "boolean",
-          "desc": "使用水滴换豆卡(如果出现限时活动是100g水换20豆,此时比浇水划算,推荐换豆)"
+          “val”：假，
+          "类型": "布尔值",
+          "desc": "使用水滴换豆卡(如果出现限时活动是100g水换20豆，此时比浇划水算，推荐换豆)"
         },
         {
-          "id": "jd_fruit_name",
-          "name": "京东账号一昵称",
+          "id": "jd_fruit_inviter",
+          "name": "东东朋友邀请码列表",
           "val": "",
-          "type": "text",
-          "desc": "京东账号昵称,用于区分自己的京东账号(非必填，建议多个京东账号使用)"
-        },
-        {
-          "id": "jd_fruit1",
-          "name": "账号一的互助码1",
-          "val": "",
-          "type": "text",
-          "desc": "京东水果互助码.这是别人的shareCode,你帮别人助力."
-        },
-        {
-          "id": "jd_fruit2",
-          "name": "账号一的互助码2",
-          "val": "",
-          "type": "text",
-          "desc": "京东水果互助码."
-        },
-        {
-          "id": "jd_fruit3",
-          "name": "账号一的互助码3",
-          "val": "",
-          "type": "text",
-          "desc": "京东水果互助码.这是别人的shareCode,你帮别人助力."
-        },
-        {
-          "id": "jd2_fruit_name",
-          "name": "京东账号二昵称",
-          "val": "",
-          "type": "text",
-          "desc": "京东账号昵称,用于区分自己的京东账号(非必填，建议多个京东账号使用)"
-        },
-        {
-          "id": "jd2_fruit1",
-          "name": "账号二的互助码1",
-          "val": "",
-          "type": "text",
-          "desc": "京东水果互助码.这是别人的shareCode,你帮别人助力."
-        },
-        {
-          "id": "jd2_fruit2",
-          "name": "账号二的互助码2",
-          "val": "",
-          "type": "text",
-          "desc": "京东水果互助码."
-        },
-        {
-          "id": "jd2_fruit3",
-          "name": "账号二的互助码3",
-          "val": "",
-          "type": "text",
-          "desc": "京东水果互助码.这是别人的shareCode,你帮别人助力."
+          "placeholder": "账号1的好友1邀请码@1账号的好友2邀请码\n\n账号2的好友1邀请码@账号2的好友邀请码",
+          "type": "textarea",
+          “自动生长”：真，
+          “行”：8，
+          "desc": "好友邀请码，同一个京东账号的好友邀请码用@隔开，不同京东账号互助码用换行(返回)隔开"
         }
       ],
-      "author": "@lxk0301",
+      "作者": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_fruit.js",
-      "icons": [
+      "脚本": "https://gitee.com/lxk0301/jd_scripts/raw/master/jd_fruit.js",
+      “图标”：[
         "https://raw.githubusercontent.com/58xinian/icon/master/jdnc_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jdnc.png"
       ]
     },
-    {
+      {
       "id": "jd_pet",
       "name": "东东萌宠",
-      "keys": [
-        "jd_pet_name",
-        "jd_pet1",
-        "jd_pet2",
-        "jd_pet3",
-        "jd_pet4",
-        "jd_pet5",
-        "jd2_pet_name",
-        "jd2_pet1",
-        "jd2_pet2",
-        "jd2_pet3",
-        "jd2_pet4",
-        "jd2_pet5"
+      "keys": ["jd_pet_inviter"],
+      “descs_html”：[
+        "请在输入框输入孩子互助的东东萌的好友互助码",
+        “同一个京东账号的好友邀请码用@隔开，不同京东账号互助码用换行（返回）隔开。示例：<br/>账号1-好友1邀请码@账号1邀请码-好友2邀请码<br/><br/>2-好友1邀请码@账号2-好友2邀请码",
+        “世界输入框提出一个示例，使用免费的创意邀请码然后按标准填写”
       ],
-      "settings": [
+      “设置”：[
         {
           "id": "jdPetNotify",
           "name": "静默运行",
-          "val": false,
-          "type": "boolean",
+          “val”：假，
+          "类型": "布尔值",
           "desc": "运行东东萌宠脚本时不发出系统通知"
         },
         {
-          "id": "jd_pet_name",
-          "name": "京东账号昵称",
+          "id": "jd_pet_inviter",
+          "name": "东萌宠好友邀请码列表",
           "val": "",
-          "type": "text",
-          "desc": "京东账号昵称,用于区分自己的京东账号(非必填，建议多个京东账号使用)"
-        },
-        {
-          "id": "jd_pet1",
-          "name": "互助码1",
-          "val": "",
-          "type": "text",
-          "desc": "东东萌宠互助码.这是别人的shareCode,你帮别人助力."
-        },
-        {
-          "id": "jd_pet2",
-          "name": "互助码2",
-          "val": "",
-          "type": "text",
-          "desc": "东东萌宠互助码.这是别人的shareCode,你帮别人助力."
-        },
-        {
-          "id": "jd_pet3",
-          "name": "互助码3",
-          "val": "",
-          "type": "text",
-          "desc": "东东萌宠互助码.这是别人的shareCode,你帮别人助力."
-        },
-        {
-          "id": "jd_pet4",
-          "name": "互助码4",
-          "val": "",
-          "type": "text",
-          "desc": "东东萌宠互助码.这是别人的shareCode,你帮别人助力."
-        },
-        {
-          "id": "jd_pet5",
-          "name": "互助码5",
-          "val": "",
-          "type": "text",
-          "desc": "东东萌宠互助码.这是别人的shareCode,你帮别人助力."
-        },
-        {
-          "id": "jd2_pet_name",
-          "name": "京东账号2昵称",
-          "val": "",
-          "type": "text",
-          "desc": "京东账号2昵称,用于区分自己的京东账号(非必填，建议多个京东账号使用)"
-        },
-        {
-          "id": "jd2_pet1",
-          "name": "账号二互助码1",
-          "val": "",
-          "type": "text",
-          "desc": "东东萌宠互助码.这是别人的shareCode,你帮别人助力."
-        },
-        {
-          "id": "jd2_pet2",
-          "name": "账号二互助码2",
-          "val": "",
-          "type": "text",
-          "desc": "东东萌宠互助码.这是别人的shareCode,你帮别人助力."
-        },
-        {
-          "id": "jd2_pet3",
-          "name": "账号二互助码3",
-          "val": "",
-          "type": "text",
-          "desc": "东东萌宠互助码.这是别人的shareCode,你帮别人助力."
-        },
-        {
-          "id": "jd2_pet4",
-          "name": "账号二互助码4",
-          "val": "",
-          "type": "text",
-          "desc": "东东萌宠互助码.这是别人的shareCode,你帮别人助力."
-        },
-        {
-          "id": "jd2_pet5",
-          "name": "账号二互助码5",
-          "val": "",
-          "type": "text",
-          "desc": "东东萌宠互助码.这是别人的shareCode,你帮别人助力."
+          "placeholder": "账号1的好友1邀请码@1账号的好友2邀请码\n\n账号2的好友1邀请码@账号2的好友邀请码",
+          "type": "textarea",
+          “自动生长”：真，
+          “行”：8，
+          "desc": "好友邀请码，同一个京东账号的好友邀请码用@隔开，不同京东账号互助码用换行(返回)隔开"
         }
       ],
-      "author": "@lxk0301",
+      "作者": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_pet.js",
-      "icons": [
+      "脚本": "https://gitee.com/lxk0301/jd_scripts/raw/master/jd_pet.js",
+      “图标”：[
         "https://raw.githubusercontent.com/58xinian/icon/master/jdmc_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jdmc.png"
       ]
