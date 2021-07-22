@@ -87,81 +87,81 @@
         "https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png"
       ]
     },
-    {
+     {
       "id": "jd_fruit",
       "name": "东东农场",
       "keys": ["jd_fruit_inviter"],
-      “descs_html”：[
-        "请在输入框输入框互助的东东农场的好友互助码",
-        “同一个京东账号的好友邀请码用@隔开，不同京东账号互助码用换行（返回）隔开。示例：<br/>账号1-好友1邀请码@账号1邀请码-好友2邀请码<br/><br/>2-好友1邀请码@账号2-好友2邀请码",
-        “世界输入框提出一个示例，使用免费的创意邀请码然后按标准填写”
+      "descs_html": [
+        "请在输入框输入跟你互助的东东农场的好友互助码",
+        "同一个京东账号的好友邀请码用@隔开,不同京东账号互助码用换行(return按键)隔开。例：<br/>账号1-好友1邀请码@账号1邀请码-好友2邀请码<br/><br/>账号2-好友1邀请码@账号2-好友2邀请码",
+        "下方输入框给出一个示例,自己使用时删除示例邀请码然后按示例填写(只填邀请码)即可"
       ],
-      “设置”：[
+      "settings": [
         {
           "id": "jdFruitNotify",
           "name": "静默运行",
-          “val”：假，
-          "类型": "布尔值",
+          "val": false,
+          "type": "boolean",
           "desc": "运行东东农场脚本时不发出系统通知"
         },
         {
           "id": "jdFruitBeanCard",
           "name": "使用水滴换豆卡",
-          “val”：假，
-          "类型": "布尔值",
-          "desc": "使用水滴换豆卡(如果出现限时活动是100g水换20豆，此时比浇划水算，推荐换豆)"
+          "val": false,
+          "type": "boolean",
+          "desc": "使用水滴换豆卡(如果出现限时活动是100g水换20豆,此时比浇水划算,推荐换豆)"
         },
         {
           "id": "jd_fruit_inviter",
-          "name": "东东朋友邀请码列表",
+          "name": "东东农场好友邀请码 列表",
           "val": "",
-          "placeholder": "账号1的好友1邀请码@1账号的好友2邀请码\n\n账号2的好友1邀请码@账号2的好友邀请码",
+          "placeholder": "账号1的好友1邀请码@账号1的好友2邀请码\n\n账号2的好友1邀请码@账号2的好友2邀请码",
           "type": "textarea",
-          “自动生长”：真，
-          “行”：8，
-          "desc": "好友邀请码，同一个京东账号的好友邀请码用@隔开，不同京东账号互助码用换行(返回)隔开"
+          "autoGrow": true,
+          "rows": 8,
+          "desc": "好友邀请码,同一个京东账号的好友邀请码用@隔开,不同京东账号互助码用换行(return按键)隔开"
         }
       ],
-      "作者": "@lxk0301",
+      "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "脚本": "https://gitee.com/lxk0301/jd_scripts/raw/master/jd_fruit.js",
-      “图标”：[
+      "script": "https://gitee.com/lxk0301/jd_scripts/raw/master/jd_fruit.js",
+      "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdnc_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jdnc.png"
       ]
     },
-      {
+    {
       "id": "jd_pet",
       "name": "东东萌宠",
       "keys": ["jd_pet_inviter"],
-      “descs_html”：[
-        "请在输入框输入孩子互助的东东萌的好友互助码",
-        “同一个京东账号的好友邀请码用@隔开，不同京东账号互助码用换行（返回）隔开。示例：<br/>账号1-好友1邀请码@账号1邀请码-好友2邀请码<br/><br/>2-好友1邀请码@账号2-好友2邀请码",
-        “世界输入框提出一个示例，使用免费的创意邀请码然后按标准填写”
+      "descs_html": [
+        "请在输入框输入跟你互助的东东萌宠的好友互助码",
+        "同一个京东账号的好友邀请码用@隔开,不同京东账号互助码用换行(return按键)隔开。例：<br/>账号1-好友1邀请码@账号1邀请码-好友2邀请码<br/><br/>账号2-好友1邀请码@账号2-好友2邀请码",
+        "下方输入框给出一个示例,自己使用时删除示例邀请码然后按示例填写(只填邀请码)即可"
       ],
-      “设置”：[
+      "settings": [
         {
           "id": "jdPetNotify",
           "name": "静默运行",
-          “val”：假，
-          "类型": "布尔值",
+          "val": false,
+          "type": "boolean",
           "desc": "运行东东萌宠脚本时不发出系统通知"
         },
         {
           "id": "jd_pet_inviter",
-          "name": "东萌宠好友邀请码列表",
+          "name": "东东萌宠好友邀请码 列表",
           "val": "",
-          "placeholder": "账号1的好友1邀请码@1账号的好友2邀请码\n\n账号2的好友1邀请码@账号2的好友邀请码",
+          "placeholder": "账号1的好友1邀请码@账号1的好友2邀请码\n\n账号2的好友1邀请码@账号2的好友2邀请码",
           "type": "textarea",
-          “自动生长”：真，
-          “行”：8，
-          "desc": "好友邀请码，同一个京东账号的好友邀请码用@隔开，不同京东账号互助码用换行(返回)隔开"
+          "autoGrow": true,
+          "rows": 8,
+          "desc": "好友邀请码,同一个京东账号的好友邀请码用@隔开,不同京东账号互助码用换行(return按键)隔开"
         }
       ],
-      "作者": "@lxk0301",
+      "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "脚本": "https://gitee.com/lxk0301/jd_scripts/raw/master/jd_pet.js",
-      “图标”：[
+      "script": "https://gitee.com/lxk0301/jd_scripts/raw/master/jd_pet.js",
+      "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdmc_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jdmc.png"
       ]
@@ -169,15 +169,11 @@
     {
       "id": "jd_plantBean",
       "name": "京东种豆",
-      "keys": [
-        "jd_plant_bean_name",
-        "jd_plantBean1",
-        "jd_plantBean2",
-        "jd_plantBean3",
-        "jd2_plant_bean_name",
-        "jd2_plantBean1",
-        "jd2_plantBean2",
-        "jd2_plantBean3"
+      "keys": ["jd_plantbean_inviter"],
+      "descs_html": [
+        "请在输入框输入跟你互助的京东种豆得豆的好友互助码",
+        "同一个京东账号的好友邀请码用@隔开,不同京东账号互助码用换行(return按键)隔开。例：<br/>账号1-好友1邀请码@账号1邀请码-好友2邀请码<br/><br/>账号2-好友1邀请码@账号2-好友2邀请码",
+        "下方输入框给出一个示例,自己使用时删除示例邀请码然后按示例填写(只填邀请码)即可"
       ],
       "settings": [
         {
@@ -188,71 +184,25 @@
           "desc": "运行种豆脚本时不发出系统通知"
         },
         {
-          "id": "jd_plant_bean_name",
-          "name": "京东账号一昵称",
+          "id": "jd_plantbean_inviter",
+          "name": "京东种豆好友邀请码 列表",
           "val": "",
-          "type": "text",
-          "desc": "京东账号昵称,用于区分自己的京东账号(非必填，建议多个京东账号使用)"
-        },
-        {
-          "id": "jd_plantBean1",
-          "name": "京东账号一互助码1",
-          "val": "",
-          "type": "text",
-          "desc": "种豆得豆互助码.这是别人的助力码,你帮别人助力."
-        },
-        {
-          "id": "jd_plantBean2",
-          "name": "京东账号一互助码2",
-          "val": "",
-          "type": "text",
-          "desc": "种豆得豆互助码.这是别人的助力码,你帮别人助力."
-        },
-        {
-          "id": "jd_plantBean3",
-          "name": "京东账号一互助码3",
-          "val": "",
-          "type": "text",
-          "desc": "种豆得豆互助码.这是别人的助力码,你帮别人助力."
-        },
-        {
-          "id": "jd2_plant_bean_name",
-          "name": "京东账号二昵称",
-          "val": "",
-          "type": "text",
-          "desc": "京东账号二昵称,用于区分自己的京东账号(非必填，建议多个京东账号使用)"
-        },
-        {
-          "id": "jd2_plantBean1",
-          "name": "京东账号二互助码1",
-          "val": "",
-          "type": "text",
-          "desc": "种豆得豆互助码.这是别人的助力码,你帮别人助力."
-        },
-        {
-          "id": "jd2_plantBean2",
-          "name": "京东账号二互助码2",
-          "val": "",
-          "type": "text",
-          "desc": "种豆得豆互助码.这是别人的助力码,你帮别人助力."
-        },
-        {
-          "id": "jd2_plantBean3",
-          "name": "京东账号二互助码3",
-          "val": "",
-          "type": "text",
-          "desc": "种豆得豆互助码.这是别人的助力码,你帮别人助力."
+          "placeholder": "账号1的好友1邀请码@账号1的好友2邀请码\n\n账号2的好友1邀请码@账号2的好友2邀请码",
+          "type": "textarea",
+          "autoGrow": true,
+          "rows": 8,
+          "desc": "好友邀请码,同一个京东账号的好友邀请码用@隔开,不同京东账号互助码用换行(return按键)隔开"
         }
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_plantBean.js",
+      "script": "https://gitee.com/lxk0301/jd_scripts/raw/master/jd_plantBean.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdzd_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jdzd.png"
       ]
     },
-    {
+ {
       "id": "jd_Joy",
       "name": "宠汪汪",
       "keys": [],
@@ -303,7 +253,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_joy.js",
+      "script": "https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdcww_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jdcww.png"
@@ -349,7 +299,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_joy_reward.js",
+      "script": "https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_reward.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdcww_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jdcww.png"
@@ -435,7 +385,7 @@
       ],
       "author": "@lxk0301",
       "repo": "https://gitee.com/lxk0301/jd_scripts/tree/master",
-      "script": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_joy_run.js",
+      "script": "https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_run.js",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/jdcww_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jdcww.png"
