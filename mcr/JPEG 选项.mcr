@@ -1,4 +1,3 @@
-DELAY : 300
-WAIT FOR : JPEG 选项 : appear : 0 : 0
-Keyboard : Enter : KeyDown
-Keyboard : Enter : KeyUp
+DELAY : 1000
+IF WINDOW EXISTS : JPEG 选项 : 0
+Mouse : 1083 : 252 : Click : 0 : 0 : 0
