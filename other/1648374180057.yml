@@ -1,0 +1,226 @@
+proxy-providers:
+  CNIX:
+    type: http
+    url: "订阅链接"
+    path: ./cnix.yaml
+    interval: 7200
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: debug
+ipv6: false
+external-controller: 0.0.0.0:9090
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  ipv6: false
+  default-nameserver:
+    - 114.114.114.114
+  nameserver:
+    - tls://223.5.5.5:853
+    - 114.114.114.114
+    - 119.29.29.29
+    - 180.76.76.76
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - '*.localdomain'
+    - '*.example'
+    - '*.invalid'
+    - '*.localhost'
+    - '*.test'
+    - '*.local'
+    - '*.home.arpa'
+    - router.asus.com
+    - localhost.sec.qq.com
+    - localhost.ptlogin2.qq.com
+    - '+.msftconnecttest.com'
+tun:
+  enable: true
+  stack: system
+  auto-route: true
+  auto-detect-interface: true
+  dns-hijack:
+    - 114.114.114.114
+    - 180.76.76.76
+    - 119.29.29.29
+    - 223.5.5.5
+    - 8.8.8.8
+    - 8.8.4.4
+    - 1.1.1.1
+    - 1.0.0.1
+
+proxy-groups:
+  - name: PROXY
+    type: select
+    proxies:
+      - CNIX
+      - DIRECT
+  - name: CNIX
+    type: select
+    use:
+      - CNIX
+
+rule-providers:
+  Advertising:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Guard/Advertising.yaml
+    url: https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Guard/Advertising.yaml
+    interval: 86400
+  Hijacking:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Guard/Hijacking.yaml
+    url: https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Guard/Hijacking.yaml
+    interval: 86400
+  Unbreak:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Unbreak.yaml
+    url: https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Unbreak.yaml
+    interval: 86400
+  Streaming:
+    type: http
+    behavior: classical
+    path: ./RuleSet/StreamingMedia/Streaming.yaml
+    url: https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/StreamingMedia/Streaming.yaml
+    interval: 86400
+  Global:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Global.yaml
+    url: https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Global.yaml
+    interval: 86400
+  China:
+    type: http
+    behavior: classical
+    path: ./RuleSet/China.yaml
+    url: https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/China.yaml
+    interval: 86400
+  ChinaIP:
+    type: http
+    behavior: ipcidr
+    path: ./RuleSet/Extra/ChinaIP.yaml
+    url: https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Extra/ChinaIP.yaml
+    interval: 86400
+rules:
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,100.64.0.0/10,DIRECT
+  - IP-CIDR,224.0.0.0/4,DIRECT
+  - IP-CIDR,fe80::/10,DIRECT
+  - IP-CIDR,119.28.28.28/32,DIRECT
+  - IP-CIDR,182.254.116.0/24,DIRECT
+  - DOMAIN,apps.corel.com,REJECT
+  - DOMAIN,mc.corel.com,REJECT
+  - DOMAIN,iws.corel.com,REJECT
+  - DOMAIN,ipm.corel.com,REJECT
+  - DOMAIN,sws.corel.com,REJECT
+  - DOMAIN,origin-mc.corel.com,REJECT
+  - DOMAIN,compute-1.amazonaws.com,REJECT
+  - DOMAIN,dev1.ipm.corel.public.corel.net,REJECT
+  - DOMAIN,mc.corel.com,REJECT
+  - DOMAIN,ipp.corel.com,REJECT
+  - DOMAIN,corelstore.com,REJECT
+  - DOMAIN-SUFFIX,corel.com,REJECT
+  - DOMAIN,dam.corel.com,REJECT
+  - DOMAIN,dev1.ipm.corel.public.corel.net,REJECT
+  - DOMAIN,apps.corel.com,REJECT
+  - DOMAIN,mc.corel.com,REJECT
+  - DOMAIN,iws.corel.com,REJECT
+  - DOMAIN,ipm.corel.com,REJECT
+  - DOMAIN,sws.corel.com,REJECT
+  - DOMAIN,origin-mc.corel.com,REJECT
+  - DOMAIN,compute-1.amazonaws.com,REJECT
+  - DOMAIN,dev1.ipm.corel.public.corel.net,REJECT
+  - DOMAIN,mc.corel.com,REJECT
+  - DOMAIN,ipp.corel.com,REJECT
+  - DOMAIN,corelstore.com,REJECT
+  - DOMAIN-SUFFIX,corel.com,REJECT
+  - DOMAIN,dam.corel.com,REJECT
+  - DOMAIN,dev1.ipm.corel.public.corel.net,REJECT
+  - DOMAIN,47.246.3.228,DIRECT
+  - DOMAIN,www.eassos.com.w.kunlunsl.com,REJECT
+  - DOMAIN,internal.eassos.com.w.kunlunsl.com,REJECT
+  - DOMAIN,wip3.adobe.com,REJECT
+  - DOMAIN,activate.adobe.com,REJECT
+  - DOMAIN,activate-sjc0.adobe.com,REJECT
+  - DOMAIN,wwis-dubc1-vip60.adobe.com,REJECT
+  - DOMAIN,activate-sea.adobe.com,REJECT
+  - DOMAIN,ereg.wip3.adobe.com,REJECT
+  - DOMAIN,adobe-dns-3.adobe.com,REJECT
+  - DOMAIN,adobe-dns-2.adobe.com,REJECT
+  - DOMAIN,adobe-dns.adobe.com,REJECT
+  - DOMAIN,3dns-3.adobe.com,REJECT
+  - DOMAIN,activate.wip3.adobe.com,REJECT
+  - DOMAIN,ereg.adobe.com,REJECT
+  - DOMAIN,practivate.adobe.com,REJECT
+  - DOMAIN,3dns-2.adobe.com,REJECT
+  - DOMAIN,lm.licenses.adobe.com,REJECT
+  - DOMAIN,lmlicenses.wip4.adobe.com,REJECT
+  - DOMAIN,activation.cloud.techsmith.com,REJECT
+  - DOMAIN,65.52.240.48,REJECT
+  - DOMAIN,licensing.ultraedit.com,REJECT
+  - DOMAIN,65.200.22.154,REJECT
+  - DOMAIN,65.200.22.99,REJECT
+  - DOMAIN,secure.ipp.corel.com,REJECT
+  - DOMAIN,content.corel.com,REJECT
+  - DOMAIN,img.chenzhanjun007.cn,REJECT
+  - DOMAIN,flash.2144.com,REJECT
+  - DOMAIN,qbwup.imtt.qq.com,REJECT
+  - DOMAIN,dldir1.qq.com,REJECT
+  - DOMAIN,acs4baichuan.m.taobao.com,REJECT
+  - DOMAIN,adash.m.taobao.com,REJECT
+  - DOMAIN,adashbc.m.taobao.com,REJECT
+  - DOMAIN,adashbc.ut.taobao.com,REJECT
+  - DOMAIN,adashx.m.taobao.com,REJECT
+  - DOMAIN,adashxgc.ut.taobao.com,REJECT
+  - DOMAIN,agoodm.m.taobao.com,REJECT
+  - DOMAIN,ai.m.taobao.com,REJECT
+  - DOMAIN,ai.taobao.com,REJECT
+  - DOMAIN,api.waptest.taobao.com,REJECT
+  - DOMAIN,apoll.m.taobao.com,REJECT
+  - DOMAIN,c-adash.m.taobao.com,REJECT
+  - DOMAIN,h-adashx.ut.taobao.com,REJECT
+  - DOMAIN,m-adash.m.taobao.com,REJECT
+  - DOMAIN,nbsdk-baichuan.taobao.com,REJECT
+  - DOMAIN,pics.taobaocdn.com,REJECT
+  - DOMAIN,pindao.huoban.taobao.com,REJECT
+  - DOMAIN,re.m.taobao.com,REJECT
+  - DOMAIN,re.taobao.com,REJECT
+  - DOMAIN,rj.m.taobao.com,REJECT
+  - DOMAIN,sdkinit.taobao.com,REJECT
+  - DOMAIN,show.re.taobao.com,REJECT
+  - DOMAIN,simaba.taobao.com,REJECT
+  - DOMAIN,strip.taobaocdn.com,REJECT
+  - DOMAIN,temai.taobao.com,REJECT
+  - DOMAIN,tunion-api.m.taobao.com,REJECT
+  - DOMAIN,unitacs.m.taobao.com,REJECT
+  - DOMAIN,w.m.taobao.com,REJECT
+  - DOMAIN-SUFFIX,umeng.com,REJECT
+  - DOMAIN-SUFFIX,microsoft.com,REJECT
+  - DOMAIN-SUFFIX,msn.com,REJECT
+  - DOMAIN-SUFFIX,akamaized.com,REJECT
+  - DOMAIN-SUFFIX,skype.com,REJECT
+  - DOMAIN-SUFFIX,scorecardresearch.com,REJECT
+  - DOMAIN-SUFFIX,umengcloud.com,REJECT
+  - DOMAIN-SUFFIX,umsns.com,REJECT
+  - DOMAIN-SUFFIX,appsflyer.com,REJECT
+  - DOMAIN-SUFFIX,pos.baidu.com,REJECT
+  - DOMAIN-SUFFIX,hm.baidu.com,REJECT
+  - DOMAIN,hpd.baidu.com,REJECT
+  - DOMAIN-SUFFIX,crashlytics.com,REJECT
+  - DOMAIN,ios.bugly.qq.com,REJECT
+  - DOMAIN,pingma.qq.com,REJECT
+  - DOMAIN-SUFFIX,mob.com,REJECT
+  - RULE-SET,Advertising,REJECT
+  - RULE-SET,Hijacking,REJECT
+  - RULE-SET,Unbreak,DIRECT
+  - RULE-SET,Streaming,PROXY
+  - RULE-SET,Global,PROXY
+  - RULE-SET,China,DIRECT
+  - GEOIP,CN,DIRECT
