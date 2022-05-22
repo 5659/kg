@@ -45,3 +45,12 @@ DOMAIN,ios.bugly.qq.com,REJECT
 DOMAIN,pingma.qq.com,REJECT
 # > Other
 DOMAIN-SUFFIX,mob.com,REJECT
+host, glores2.lanzoui.com, REJECT
+host, sanme2.lanzoui.com, REJECT
+host-suffix, flurry.com, REJECT
+host-keyword, alook, REJECT
+host-keyword, safebrowsing, REJECT
+host-keyword, sogou, REJECT
+host, img-cdn.huami.com, REJECT
+HOST, im.tieba.baidu.com,REJECT
+HOST, ocsp.pki.goog,REJECT
