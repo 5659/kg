@@ -242,8 +242,6 @@ DOMAIN-SUFFIX,zynamics.com,PROXY
 DOMAIN-KEYWORD,google,PROXY
 DOMAIN-KEYWORD,.blogspot.,PROXY
 DOMAIN-SUFFIX,goog,PROXY
-# > Apple
-DOMAIN,testflight.apple.com,PROXY
 # > Automattic
 DOMAIN-SUFFIX,gravatar.com,PROXY
 DOMAIN-SUFFIX,tumblr.com,PROXY
@@ -537,12 +535,6 @@ DOMAIN,d1v5ir2lpwr8os.cloudfront.net,PROXY
 DOMAIN,d27xxe7juh1us6.cloudfront.net,PROXY
 # DOMAIN,www.amazon.com,PROXY
 DOMAIN-KEYWORD,avoddashs,PROXY
-# > Apple Music TV
-DOMAIN,tv.applemusic.com,PROXY
-# > Apple TV
-DOMAIN,linear.tv.apple.com,PROXY
-DOMAIN,play-edge.itunes.apple.com,PROXY
-DOMAIN,uts-api.itunes.apple.com,PROXY
 # > Bahamut
 USER-AGENT,Anime*,PROXY
 DOMAIN-SUFFIX,bahamut.com.tw,PROXY
