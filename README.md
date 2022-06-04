@@ -3,6 +3,6 @@
 
 China.list和Global.list根据DivineEngine相应分流文件合并，
 
-Advertising.conf  根据DivineEngine和https://github.com/ddgksf2013/Cuttlefish文件整合
+Advertising.conf  根据DivineEngine和https://github.com/ddgksf2013/Cuttlefish，文件整合
 
 在此感谢以上大佬
