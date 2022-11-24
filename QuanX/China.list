@@ -66,6 +66,7 @@ DOMAIN-SUFFIX,iqiyipic.com,DIRECT
 DOMAIN-SUFFIX,71.am,DIRECT
 DOMAIN-SUFFIX,71edge.com,DIRECT
 # > JD
+DOMAIN-SUFFIX,yhd.com,DIRECT
 DOMAIN-SUFFIX,jd.com,DIRECT
 DOMAIN-SUFFIX,jd.hk,DIRECT
 DOMAIN-SUFFIX,jdpay.com,DIRECT
@@ -227,6 +228,7 @@ DOMAIN,sms.imagetasks.com,DIRECT
 DOMAIN-SUFFIX,netspeedtestmaster.com,DIRECT
 DOMAIN,speedtest.macpaw.com,DIRECT
 # > Private Tracker
+yhd.com
 DOMAIN-SUFFIX,acg.rip,DIRECT
 DOMAIN-SUFFIX,animebytes.tv,DIRECT
 DOMAIN-SUFFIX,awesome-hd.me,DIRECT
