@@ -799,7 +799,6 @@ DOMAIN,adsmind.tc.qq.com,REJECT
 DOMAIN-SUFFIX,gtimg.cn,REJECT
 DOMAIN-SUFFIX,gtimg.com,REJECT
 DOMAIN-SUFFIX,ugdtimg.com,REJECT
-DOMAIN,splashqqlive.gtimg.com,REJECT
 DOMAIN,wxsnsdy.wxs.qq.com,REJECT
 DOMAIN,wxsnsdythumb.wxs.qq.com,REJECT
 # > Tencent Music (TME)
@@ -888,3 +887,4 @@ IP6-CIDR,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT
 # > ZOL
 DOMAIN,apppv.zol.com.cn,REJECT
 DOMAIN,pvnapp.zol.com.cn,REJECT
+DOMAIN-SUFFIX,pglstatp-toutiao.com
