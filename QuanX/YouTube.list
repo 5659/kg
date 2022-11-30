@@ -12,5 +12,5 @@ DOMAIN-SUFFIX,youtubekids.com,YouTube
 DOMAIN-SUFFIX,youtube-nocookie.com,YouTube
 DOMAIN-SUFFIX,yt.be,YouTube
 DOMAIN-SUFFIX,ytimg.com,YouTube
-DOMAIN,youtubei.googleapis.com,YouTube
+DOMAIN-SUFFIX,googleapis.com,YouTube
 DOMAIN,yt3.ggpht.com,YouTube
