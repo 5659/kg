@@ -239,7 +239,6 @@ DOMAIN-SUFFIX,webrtc.org,PROXY
 DOMAIN-SUFFIX,widevine.com,PROXY
 DOMAIN-SUFFIX,xn--ngstr-lra8j.com,PROXY
 DOMAIN-SUFFIX,zynamics.com,PROXY
-DOMAIN-KEYWORD,google,PROXY
 DOMAIN-KEYWORD,.blogspot.,PROXY
 DOMAIN-SUFFIX,goog,PROXY
 # > Automattic
