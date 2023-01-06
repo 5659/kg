@@ -50,7 +50,7 @@ host, sanme2.lanzoui.com, REJECT
 host-suffix, flurry.com, REJECT
 host-suffix, getui.com, REJECT
 host-suffix, getui.net, REJECT
-host-keyword, alook, REJECT
+host-suffix, alookweb.com, REJECT
 host-keyword, safebrowsing, REJECT
 host-keyword, sogou, REJECT
 host, img-cdn.huami.com, REJECT
