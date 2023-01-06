@@ -496,7 +496,6 @@ DOMAIN-SUFFIX,ad.daum.net,REJECT
 DOMAIN-SUFFIX,ad.g.daum.net,REJECT
 
 DOMAIN,abema-adx.ameba.jp,REJECT
-DOMAIN,ad.12306.cn,REJECT
 DOMAIN,ad.caiyunapp.com,REJECT
 DOMAIN,ad.flurry.com,REJECT
 DOMAIN,ad.huajiao.com,REJECT
@@ -570,14 +569,8 @@ DOMAIN,optimus-ads.amap.com,REJECT
 DOMAIN,optimus-ads.amap.com.w.alikunlun.com,REJECT
 # ------
 # > Autohome
-DOMAIN,adproxy.autohome.com.cn,REJECT
-DOMAIN,rd.autohome.com.cn,REJECT
-DOMAIN,al.autohome.com.cn,REJECT
-DOMAIN,applogapi.autohome.com.cn,REJECT
-DOMAIN,adm0.autoimg.cn,REJECT
-DOMAIN,adm1.autoimg.cn,REJECT
-DOMAIN,adm2.autoimg.cn,REJECT
-DOMAIN,adm3.autoimg.cn,REJECT
+DOMAIN-SUFFIX,autohome.com.cn,REJECT
+DOMAIN-SUFFIX,autoimg.cn,REJECT
 
 # (B)
 # --- (Baidu) ---
@@ -613,13 +606,7 @@ DOMAIN,log.ycapp.yiche.com,REJECT
 # > Braze
 DOMAIN-SUFFIX,iad.appboy.com,REJECT
 DOMAIN-SUFFIX,iad-03.appboy.com,REJECT
-DOMAIN-SUFFIX,iad-01.braze.com,REJECT
-DOMAIN-SUFFIX,iad-02.braze.com,REJECT
-DOMAIN-SUFFIX,iad-03.braze.com,REJECT
-DOMAIN-SUFFIX,iad-04.braze.com,REJECT
-DOMAIN-SUFFIX,iad-05.braze.com,REJECT
-DOMAIN-SUFFIX,iad-06.braze.com,REJECT
-DOMAIN-SUFFIX,iad-08.braze.com,REJECT
+DOMAIN-SUFFIX,braze.com,REJECT
 
 # (C)
 # > CCTVVideo
@@ -662,13 +649,8 @@ DOMAIN,adx.hupu.com,REJECT
 DOMAIN,adx-api.hupu.com,REJECT
 DOMAIN,goblin.hupu.com,REJECT
 # > happycast
-DOMAIN,ad.hpplay.cn,REJECT
-DOMAIN,adc.hpplay.cn,REJECT
-DOMAIN,adcdn.hpplay.cn,REJECT
-DOMAIN,adeng.hpplay.cn,REJECT
-DOMAIN,pin.hpplay.cn,REJECT
-DOMAIN,rp.hpplay.cn,REJECT
-DOMAIN,rpt.hpplay.cn,REJECT
+
+DOMAIN-SUFFIX,hpplay.cn,REJECT
 
 # (J)
 # >jxedt
