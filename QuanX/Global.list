@@ -1,6 +1,7 @@
 # (D.C.S.G?)
 
-DOMAIN-SUFFIX,mypikpak.com
+DOMAIN-SUFFIX,mypikpak.com,PROXY
+DOMAIN-SUFFIX,openai.com,PROXY
 DOMAIN-SUFFIX,yzzk.com,PROXY
 DOMAIN-SUFFIX,9cache.com,PROXY
 DOMAIN-SUFFIX,9gag.com,PROXY
