@@ -53,7 +53,19 @@ host-suffix, getui.net, REJECT
 host-suffix, alookweb.com, REJECT
 host-keyword, safebrowsing, REJECT
 host-keyword, sogou, REJECT
-host, img-cdn.huami.com, REJECT
-HOST, im.tieba.baidu.com,REJECT
-HOST, ocsp.pki.goog,REJECT
-
+DOMAIN, img-cdn.huami.com, REJECT
+DOMAIN,im.tieba.baidu.com,REJECT
+DOMAIN,ocsp.pki.goog,REJECT
+中国移动
+DOMAIN-SUFFIX, verify.cmpassport.com,REJECT
+中国联通
+DOMAIN, opencloud.wostore.cn,REJECT
+DOMAIN, auth.wosms.cn,REJECT
+DOMAIN, id.mail.wo.cn,REJECT
+DOMAIN, mdn.open.wo.cn,REJECT
+DOMAIN, hmrz.wo.cn,REJECT
+DOMAIN, nishub1.10010.com,REJECT
+DOMAIN, enrichgw.10010.com,REJECT
+中国电信
+DOMAIN-SUFFIX,  id6.me,REJECT
+DOMAIN,open.e.189.cn,REJECT
