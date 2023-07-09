@@ -45,27 +45,20 @@ DOMAIN,ios.bugly.qq.com,REJECT
 DOMAIN,pingma.qq.com,REJECT
 # > Other
 DOMAIN-SUFFIX,mob.com,REJECT
-host, glores2.lanzoui.com, REJECT
-host, sanme2.lanzoui.com, REJECT
+DOMAIN, glores2.lanzoui.com, REJECT
+DOMAIN, sanme2.lanzoui.com, REJECT
 host-suffix, flurry.com, REJECT
-host-suffix, getui.com, REJECT
-host-suffix, getui.net, REJECT
-host-suffix, alookweb.com, REJECT
+DOMAIN-SUFFIX, getui.com, REJECT
+DOMAIN-SUFFIX, getui.net, REJECT
+DOMAIN-SUFFIX, alookweb.com, REJECT
 host-keyword, safebrowsing, REJECT
 host-keyword, sogou, REJECT
 DOMAIN, img-cdn.huami.com, REJECT
 DOMAIN,im.tieba.baidu.com,REJECT
 DOMAIN,ocsp.pki.goog,REJECT
-# >>中国移动
-DOMAIN-SUFFIX, verify.cmpassport.com,REJECT
-# >>中国联通
-DOMAIN, opencloud.wostore.cn,REJECT
-DOMAIN, auth.wosms.cn,REJECT
-DOMAIN, id.mail.wo.cn,REJECT
-DOMAIN, mdn.open.wo.cn,REJECT
-DOMAIN, hmrz.wo.cn,REJECT
-DOMAIN, nishub1.10010.com,REJECT
-DOMAIN, enrichgw.10010.com,REJECT
-# >>中国电信
-DOMAIN-SUFFIX,  id6.me,REJECT
-DOMAIN,open.e.189.cn,REJECT
+#欺诈性网站警告
+DOMAIN-SUFFIX,urlsec.qq.com,REJECT
+DOMAIN,safebrowsing.urlsec.qq.com,REJECT
+DOMAIN,www.urlsec.qq.com,REJECT
+DOMAIN,safebrowsing.googleapis.com,REJECT
+DOMAIN,safebrowsing.googleapis-cn.com,REJECT
