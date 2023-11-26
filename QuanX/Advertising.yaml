@@ -1,5 +1,6 @@
 # Advertising
 # > General
+payload:
   - DOMAIN-KEYWORD,adservice
   - DOMAIN-KEYWORD,umeng
   - DOMAIN-SUFFIX,1phads.com
