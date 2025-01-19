@@ -1,11 +1,11 @@
 BEGIN:VCALENDAR
-PRODID:-//YangH9//China Calendar//CN
+PRODID:-//ShuYZ.com//China Public Holidays 2.0//CN
 VERSION:2.0
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:中华人民共和国节日、纪念日、法定节假日调休补班、二十四节气、农历天干地支日历
+X-WR-CALNAME:ShuYZ中国节假日
 X-WR-TIMEZONE:Asia/Shanghai
-X-WR-CALDESC:2024~2025年中华人民共和国节日、纪念日、法定节假日调休补班、二十四节气、农历天干地支日历。更新时间：2025-01-03
+X-WR-CALDESC:2023~2025年中国放假、调休和补班日历 更新时间2024-11-12 18:23:07
 BEGIN:VTIMEZONE
 TZID:Asia/Shanghai
 X-LIC-LOCATION:Asia/Shanghai
@@ -17,22 +17,16 @@ DTSTART:19700101T000000
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-SEQUENCE:1
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20250101
 DTEND;VALUE=DATE:20250102
 DTSTAMP:20250101T000000Z
-UID:20250101T000001_CitizenHoliday_all_171@YangH9
-CREATED:20250101T000001
-LAST-MODIFIED:20250103T162626
-SUMMARY:『元旦』
+UID:20250101T000001_holiday1@shuyz.com
+CREATED:20241112T182307Z
+SUMMARY:"元旦"
 DESCRIPTION:元旦（1月1日）。\n元旦，即公历的1月1日，是世界多数国家通称的“新年”。元，谓“始”，凡数之始称为“元”；旦，谓“日”；“元旦”即“初始之日”的意思。“元旦”通常指历法中的首月首日。\n在我国，“元旦”一词古已有之，在文学作品中最早见于《晋书》。我国历史上的“元旦”指的是“正月一日”，“正月”的计算方法，在汉武帝时期以前是很不统一的，历代的元旦（首月首日）日期并不一致。\n辛亥革命后，为了“行夏正，所以顺农时，从西历，所以便统计”，民国元年决定使用公历（实际使用是1912年），并规定阳历1月1日为“新年”，但并不叫“元旦”。1949年中华人民共和国以公历1月1日为元旦，因此“元旦”在中国也被称为“阳历年”、“新历年”或“公历年”。\n\n2024~2025年中华人民共和国节日、纪念日、法定节假日调休补班、二十四节气、农历天干地支日历。更新时间：2025-01-03
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-SEQUENCE:1
+SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20250129
